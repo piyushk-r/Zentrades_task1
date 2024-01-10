@@ -1,9 +1,9 @@
 let p = fetch("https://s3.amazonaws.com/open-to-cors/assignment.json");
 
 function sortPopu(data) {
-    const products = Object.values(data.products); // product ka object access karliya 
+    const products = Object.values(data.products);
     return products.sort((a, b) => {
-      const popu1 = parseInt(a.popularity); // convert karle string to int numeric comparison ke liye
+      const popu1 = parseInt(a.popularity); 
       const popu2 = parseInt(b.popularity);
   
       return popu2 - popu1; // Descending order
